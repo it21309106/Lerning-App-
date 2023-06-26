@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.BankCardActivity">
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="362dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="48dp"
+        android:text="Add Payment Card Details"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.326"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bankCard"
+        android:layout_width="340dp"
+        android:layout_height="432dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.383" >
+
+        <EditText
+            android:id="@+id/cardType"
+            android:layout_width="293dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/colorSecondary"
+            android:ems="10"
+            android:hint="Card Type"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/cardNumber"
+            android:layout_width="293dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="120dp"
+            android:background="@color/colorSecondary"
+            android:ems="10"
+            android:hint="Card Number"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/cardYear"
+            android:layout_width="293dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/colorSecondary"
+            android:ems="10"
+            android:hint="Exp Year and Month"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <EditText
+            android:id="@+id/cardCvc"
+            android:layout_width="293dp"
+            android:layout_height="63dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="280dp"
+            android:background="@color/colorSecondary"
+            android:ems="10"
+            android:hint="CVC"
+            android:inputType="textPersonName"
+            android:textAlignment="viewStart" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="220dp"
+            android:layout_marginTop="375dp"
+            android:text="SAVE"
+            android:textSize="16sp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

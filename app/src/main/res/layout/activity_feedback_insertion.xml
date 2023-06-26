@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.FeedbackInsertionActivity">
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="297dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="56dp"
+        android:text="Feedback Form"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/feedbackName"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="88dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Enter Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+    <EditText
+        android:id="@+id/feedbackGrade"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Enter Grade"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackName" />
+
+    <EditText
+        android:id="@+id/feedbackFeedback"
+        android:layout_width="335dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="52dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Enter Feedback"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.565"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackGrade" />
+
+    <Button
+        android:id="@+id/feedbacksavebtn"
+        android:layout_width="178dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="52dp"
+        android:text="save data"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feedbackFeedback"
+        app:layout_constraintVertical_bias="0.057" />
+</androidx.constraintlayout.widget.ConstraintLayout>

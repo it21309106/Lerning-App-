@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etHelpSubject"
+        android:layout_width="386dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorSecondary"
+        android:hint="Subject"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etHelpQuestion"
+        android:layout_width="386dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Question" />
+
+    <EditText
+        android:id="@+id/etHelpEmail"
+        android:layout_width="386dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorSecondary"
+        android:ems="10"
+        android:hint="Email" />
+
+
+    <Button
+        android:id="@+id/btnUpdateHelpData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Update Data"
+        app:cornerRadius="10dp" />
+
+
+</LinearLayout>
